@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Attendance App</title>
+  </head>
+  <style>
+    body {
+      font-family: monospace;
+    }
+  </style>
+
+<body>
+  <script>
+  window.onload = function() {
+    document.querySelector("#name").innerText = new URL(document.location).searchParams.get("first-name");
+  };
+  </script>
+
+  <h1>
+    Success!
+  </h1>
+  <h3>
+    Your form was submitted, <span id="name"></span>.
+  </h3>
+</body>
